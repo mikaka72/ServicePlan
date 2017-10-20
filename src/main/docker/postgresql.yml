@@ -1,0 +1,11 @@
+version: '2'
+services:
+    serviceplan-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/serviceplan/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=serviceplan
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
